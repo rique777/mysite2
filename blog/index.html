@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Estratégias de Growth Marketing e Dicas para Seu Negócio</title>
+    <meta name="description" content="Encontre as melhores estratégias de growth marketing, marketing digital, dicas para aumentar vendas, conteúdo e insights para turbinar seu negócio online.">
+    
+    <style>
+        /* CSS REAPROVEITADO DA SUA LANDING PAGE - MANTENDO A CONSISTÊNCIA */
+        body, h1, h2, h3, p, ul, ol, li, blockquote {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Acessibilidade: Foco em elementos interativos com contraste aprimorado */
+        :focus {
+            outline: 4px solid #0056b3; 
+            outline-offset: 3px;
+        }
+
+        /* Estilos do Cabeçalho (similar ao hero, mas menor para blog) */
+        .blog-header {
+            background-color: #007bff; /* Azul vibrante */
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .blog-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .blog-header p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Botões (mesmos estilos) */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .primary-btn {
+            background-color: #ffc107;
+        }
+
+        .primary-btn:hover {
+            background-color: #e0a800;
+        }
+
+        .secondary-btn {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .secondary-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Lista de Artigos do Blog */
+        .article-list {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .article-list h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #ddd; /* Borda sutil */
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 200px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Garante que a imagem cubra o espaço */
+            display: block;
+        }
+
+        .article-card-content {
+            padding: 20px;
+        }
+
+        .article-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+
+        .article-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .article-card .read-more {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .article-card .read-more:hover {
+            background-color: #0056b3;
+        }
+        
+        .article-meta {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé (mesmos estilos) */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade (mesmos estilos) */
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 1.8em;
+            }
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="blog-header" role="banner">
+        <div class="container">
+            <h1 id="blog-main-heading">Blog: Estratégias de <span style="color: #ffc107;">Growth Marketing</span> para Seu Negócio!</h1>
+            <p>Descubra como otimizar seu marketing digital, aumentar vendas, e encontrar as melhores campanhas de marketing digital para o seu negócio. Um guia completo para pequenas empresas e startups.</p>
+            <a href="../index.html" class="btn primary-btn" aria-label="Voltar para a página principal do Kwork" role="button">Voltar para o Kwork</a>
+        </div>
+    </header>
+
+    <main class="article-list">
+        <div class="container">
+            <h2>Últimos Artigos de Marketing e Vendas</h2>
+            <div class="articles-grid" role="list">
+                
+                <article class="article-card" role="listitem">
+                    <img src="blog.png" alt="Pessoas diversas segurando smartphones, simbolizando marketing de influência e conexões digitais.">
+                    <div class="article-card-content">
+                        <h3><a href="marketing-influencia.html" aria-label="Leia o artigo sobre Marketing de Influência para Pequenas Empresas">Marketing de Influência para Pequenas Empresas: Como Turbinar Suas Vendas.</a></h3>
+                        <p class="article-meta">Publicado em: 19 de Junho de 2025</p>
+                        <p>Explore como parcerias estratégicas com influencers podem revolucionar o marketing digital do seu negócio, mesmo com orçamento limitado...</p>
+                        <a href="marketing-influencia.html" class="read-more" aria-label="Continuar lendo o artigo sobre Marketing de Influência" role="button">Leia Mais</a>
+                    </div>
+                </article>
+
+                <article class="article-card" role="listitem">
+                    <img src="blog.png" alt="Sinal de trânsito dividido em 'Tráfego Pago' e 'Marketing Digital', simbolizando uma escolha de estratégia.">
+                    <div class="article-card-content">
+                        <h3><a href="marketing-digital.html" aria-label="Leia o artigo sobre Tráfego Pago ou Marketing Digital">Tráfego Pago ou Marketing Digital: Qual Estratégia é Melhor para Começar?</a></h3>
+                        <p class="article-meta">Publicado em: 15 de Junho de 2025</p>
+                        <p>Desvende as diferenças entre tráfego pago e marketing digital. Entenda qual abordagem se alinha melhor aos seus objetivos de aumentar vendas...</p>
+                        <a href="marketing-digital.html" class="read-more" aria-label="Continuar lendo o artigo sobre Tráfego Pago ou Marketing Digital" role="button">Leia Mais</a>
+                    </div>
+                </article>
+
+                </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Rique Lima. Todos os direitos reservados. Profissional de Glow Marketing.</p>
+            <p>
+                <a href="../politica-de-privacidade.html" aria-label="Link para a Política de Privacidade do site">Política de Privacidade</a> | 
+                <a href="../termos-de-servico.html" aria-label="Link para os Termos de Serviço do site">Termos de Serviço</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
